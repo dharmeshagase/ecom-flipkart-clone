@@ -1,0 +1,38 @@
+.orderPageDiv {
+  max-width: 1160px;
+  margin: 5px auto;
+}
+.orderItemCard {
+  /* maxWidth: "1200px", margin: "5px auto" */
+  /* max-width: 1200px; */
+  margin: 5px 0;
+}
+.orderItemContainer {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+.imageDiv {
+  width: 80;
+  height: 80;
+  overflow: hidden;
+  text-align: center;
+}
+.orderTextContainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.orderName {
+  width: 300px;
+  padding-left: 25px;
+}
+.orderPrice {
+  box-sizing: border-box;
+  padding: 0 40px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+}

@@ -1,0 +1,29 @@
+.productViewAll{
+    padding: 10px;
+}
+.productViewAllCard{
+   
+    display: flex !important;
+}
+.productViewAllContainer{
+    width: 250px;
+    margin: 0 20px;
+}
+.productViewAllImgContainer{
+    width: 240px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.productViewAllImgContainer > img{
+    max-width: 100%;
+    max-height: 300px;
+}
+.pvaProductName{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.pvaProductPrice{
+    font-size: 12px;
+    font-weight: 600;
+}
