@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { generatePublicImageUrl } from "../../../apiConfig";
+// import { generatePublicImageUrl } from "../../../apiConfig";
 import { removeCartItem } from "../../../features/cartSlice";
 import "./style.css";
 
@@ -33,7 +33,7 @@ export const CartItem = (props) => {
     <div className="cartItemContainer">
       <div className="flexRow">
         <div className="cartProImgContainer">
-          <img src={generatePublicImageUrl(img)} alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="cartItemDetails">
           <div>

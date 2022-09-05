@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-// import { Card } from "react-bootstrap";
 import Card from "../../../components/UI/Card";
 import { BiRupee } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { generatePublicImageUrl } from "../../../apiConfig";
 import { getProductBySlug } from "../../../features/productSlice";
 import "./style.css";
 /**
@@ -32,7 +30,7 @@ export const ProductsViewAll = (props) => {
                 to={`/${product.slug}/${product._id}/p`}
               >
                 <img
-                  src={generatePublicImageUrl(product.productPictures[0].img)}
+                  src={product.productPictures[0].img}
                   alt=""
                 />
               </Link>

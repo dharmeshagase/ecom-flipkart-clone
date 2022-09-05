@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { generatePublicImageUrl } from "../../apiConfig";
+// import { generatePublicImageUrl } from "../../apiConfig";
 import { Layout } from "../../components/Layout";
 import Card from "../../components/UI/Card";
 import Price from "../../components/UI/Price";
@@ -82,7 +82,7 @@ export const OrderDetails = (props) => {
             <div className="flexRow">
               <div className="delItemImgContainer">
                 {console.log(item.productId.productPictures[0])}
-                <img src={generatePublicImageUrl(item.productId.productPictures[0].img)} alt="" />
+                <img src={item.productId.productPictures[0].img} alt="" />
               </div>
               <div style={{ width: "250px" }}>
                 <div className="delItemName">{item.productId.name}</div>

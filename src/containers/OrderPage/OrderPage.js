@@ -4,7 +4,7 @@ import { BiRupee } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { generatePublicImageUrl } from "../../apiConfig";
+// import { generatePublicImageUrl } from "../../apiConfig";
 import { Layout } from "../../components/Layout";
 import { Breed } from "../../components/MaterialUI";
 import { getOrder } from "../../features/orderSlice";
@@ -51,9 +51,7 @@ export const OrderPage = (props) => {
                 <div className="imageDiv">
                   <img
                     style={{ maxWidth: 80, maxHeight: 80 }}
-                    src={generatePublicImageUrl(
-                      item["productId"].productPictures[0]["img"]
-                    )}
+                    src={item["productId"].productPictures[0]["img"]}
                   ></img>
                 </div>
                 <div className="orderTextContainer">

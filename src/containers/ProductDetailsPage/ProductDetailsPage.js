@@ -8,7 +8,7 @@ import { IoIosArrowForward, IoIosStar, IoMdCart } from "react-icons/io";
 import { getProductDetailsById } from '../../features/productSlice';
 import { MaterialButton } from "../../components/MaterialUI";
 import "./style.css";
-import { generatePublicImageUrl } from '../../apiConfig';
+// import { generatePublicImageUrl } from '../../apiConfig';
 import { addToCart } from '../../features/cartSlice';
 import {useNavigate} from 'react-router-dom';
 
@@ -49,7 +49,7 @@ const {productDetails} = useSelector(state=>state.product);
             {
               productDetails.productPictures.map((thumb, index) => 
               <div className="thumbnail" key = {index}>
-                <img src={generatePublicImageUrl(thumb.img)} alt={thumb.img} />
+                <img src={thumb.img} alt={thumb.img} />
               </div>
               )
             }
@@ -62,7 +62,7 @@ const {productDetails} = useSelector(state=>state.product);
           </div>
           <div className="productDescContainer">
             <div className="productDescImgContainer">
-              <img src={generatePublicImageUrl(productDetails.productPictures[0].img)} alt={`${productDetails.productPictures[0].img}`} />
+              <img src={productDetails.productPictures[0].img} alt={`${productDetails.productPictures[0].img}`} />
             </div>
 
             {/* action buttons */}
