@@ -156,7 +156,7 @@ const Header = (props) => {
         <div className="authContainer">
           <div className="row">
             <div className="leftspace">
-              <h2>Login</h2>
+              <h2>{signup?'Signup':'Login'}</h2>
               <p>Get access to your Orders, Wishlist and Recommendations</p>
             </div>
             <div className="rightspace">
@@ -199,10 +199,17 @@ const Header = (props) => {
                 />
                 <p style={{ textAlign: "center" }}>OR</p>
                 <MaterialButton
-                  title="Request OTP"
+                  title={signup?"Login":"Sign Up"}
                   bgColor="#ffffff"
                   textColor="#2874f0"
                   style={{ margin: "20px 0" }}
+                  onClick={() => {
+                    setLoginModal(true);
+                    if(!signup)
+                    setSignup(true);
+                    else
+                    setSignup(false);
+                  }}
                 />
               </div>
             </div>
