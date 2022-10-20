@@ -101,7 +101,6 @@
   margin: 0 20px;
   cursor: pointer;
   text-decoration: none;
-
 }
 
 .cart {
@@ -112,7 +111,7 @@
   justify-content: center;
   margin: 0 20px;
   text-decoration: none;
-
+  cursor: pointer;
 }
 
 .authContainer {
@@ -138,7 +137,7 @@
   height: 100%;
   color: #fff;
   letter-spacing: 1px;
-  background-image: url('../../images/login-image.png');
+  background-image: url("../../images/login-image.png");
   background-color: #2874f0;
   background-repeat: no-repeat;
   background-position: center 85%;
@@ -153,9 +152,9 @@
   align-items: center;
 }
 
-.loginInputContainer{
+.loginInputContainer {
   width: 100%;
   box-sizing: border-box;
   padding: 0 30px;
-  margin : 40px 0;
+  margin: 40px 0;
 }

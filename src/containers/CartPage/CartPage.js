@@ -61,6 +61,7 @@ export const CartPage = (props) => {
   return (
     <Layout>
       <div className="cartContainer">
+      {Object.keys(cartItems).length>0?<>
         <Card
           headerLeft="My Cart"
           headerRight="Deliver to"
@@ -93,10 +94,7 @@ export const CartPage = (props) => {
             </div>
           </div>
         </Card>
-        {/* <Card style={{ width: '380px' }}
-          headerLeft="Price">
-
-        </Card> */}
+   
         <PriceDetails
           totalItem={Object.keys(cartItems).reduce(function (qty, key) {
             return qty + cartItems[key].qty;
@@ -106,6 +104,8 @@ export const CartPage = (props) => {
             return totalPrice + price * qty;
           }, 0)}
         />
+        </>
+        :"Cart is empty"}
       </div>
     </Layout>
   );
