@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view the demo webiste on this url -> (https://flipkart-ecom.onrender.com)
+Note : Navigate to Samsung Mobiles under the Electroincs category to view the list of products and their info.
+
+## Features
+
+In this website you can:
+1. Signup and create an account as a new user.
+2. Login as an existing user.
+3. Add items to cart and these items get locally stored if the user isn't loggged in,so that the user can again check the cart items when he reopens the website.
+4. If an user adds items to cart and then logs in, the items added to cart before logging in will be visible in the user's logged in cart.
+5. A user can add different addresses and also select the address where the items need to be delivered.
+6. A user can place an order for the items in the cart and can even check the status of the orders (if it is Ordered, Packed, Shipped, Delivered) in the orders tab.
 
 ## Available Scripts
 
